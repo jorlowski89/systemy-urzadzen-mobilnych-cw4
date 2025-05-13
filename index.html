@@ -15,7 +15,25 @@
   </nav>
   <main>
     <h1>Witaj w aplikacji PWA</h1>
-    <div id="content">To jest strona główna.</div>
+    <div id="content">
+      <section class="intro">
+        <h2>O aplikacji</h2>
+        <p>To prosta aplikacja PWA umożliwiająca tworzenie notatek i sprawdzanie pogody</p>
+      </section>
+
+      <section class="features">
+        <ul>
+          <li><strong>Notatki:</strong> zapis lokalny w IndexedDB</li>
+          <li><strong>Pogoda:</strong> aktualne dane bez klucza API</li>
+          <li><strong>PWA:</strong> możesz dodać ją do ekranu głównego</li>
+          <li><strong>Offline:</strong> działa bez internetu</li>
+        </ul>
+      </section>
+
+      <section id="status">
+        <p>Status połączenia: <strong id="net-status">...</strong></p>
+      </section>
+    </div>
   </main>
   <script src="script.js"></script>
   <script>
