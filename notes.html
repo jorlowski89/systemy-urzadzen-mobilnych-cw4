@@ -14,13 +14,18 @@
     <a href="weather.html">Pogoda</a>
   </nav>
   <main>
-    <h1>Formularz notatek</h1>
-    <div id="content"></div>
+    <h1>Notatki</h1>
+    <form id="noteForm">
+      <input type="text" id="title" placeholder="Tytuł" required>
+      <textarea id="content" placeholder="Treść notatki" required></textarea>
+      <button type="submit">Zapisz</button>
+    </form>
+    <ul id="notesList"></ul>
   </main>
-  <script src="script.js"></script>
+  <script src="notes.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(() => console.log('SW registered'));
+      navigator.serviceWorker.register('sw.js');
     }
   </script>
 </body>
