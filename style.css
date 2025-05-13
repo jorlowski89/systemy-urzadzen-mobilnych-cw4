@@ -23,6 +23,7 @@ main {
   padding: 20px;
 }
 
+/* Notes page styles */
 form {
   background-color: #fff;
   padding: 20px;
@@ -91,4 +92,53 @@ form button:hover {
 
 .delete-btn:hover {
   background-color: #c82333;
+}
+
+/* Weather page styles */
+form#weatherForm {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form#weatherForm input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form#weatherForm button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form#weatherForm button:hover {
+  background-color: #218838;
+}
+
+#weatherResult {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#weatherResult h2 {
+  margin-top: 0;
 }

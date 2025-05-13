@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pogoda</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
@@ -14,13 +14,17 @@
     <a href="weather.html">Pogoda</a>
   </nav>
   <main>
-    <h1>Dane pogodowe</h1>
-    <div id="content">(Tu będą dane z API pogody)</div>
+    <h1>Sprawdź pogodę</h1>
+    <form id="weatherForm">
+      <input type="text" id="city" placeholder="Wpisz miasto" required />
+      <button type="submit">Pobierz pogodę</button>
+    </form>
+    <div id="weatherResult"></div>
   </main>
-  <script src="script.js"></script>
+  <script src="weather.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(() => console.log('SW registered'));
+      navigator.serviceWorker.register('sw.js');
     }
   </script>
 </body>
